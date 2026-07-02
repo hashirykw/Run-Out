@@ -224,6 +224,12 @@
     .sep { width: 100%; height: 1px; background: linear-gradient(to right, transparent, var(--border), var(--borderl), var(--border), transparent); }
 
 
+
+    /* Image fallback - shows gradient if image fails */
+    .hero-bg-main img { background: linear-gradient(135deg, #1a1a0f 0%, #141414 50%, #0a0a00 100%); }
+    .about-img-wrap img { background: #141414; }
+    .gallery-item img { background: #0e0e0e; }
+
     /* ── GALLERY ── */
     .gallery-grid { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; gap: 8px; margin-top: 32px; }
     .gallery-item { position: relative; overflow: hidden; border-radius: var(--r); cursor: pointer; aspect-ratio: 4/3; }
@@ -447,7 +453,7 @@
   <div class="hero-bg">
     <div class="hero-bg-main">
       <img
-        src="https://images.unsplash.com/photo-1540747913346-19212a4a65b6?w=1600&q=85&auto=format&fit=crop&crop=center"
+        src="https://images.unsplash.com/photo-1540747913346-19212a4a65b6?w=1600&q=85&fm=jpg&auto=format&fit=crop"
         alt="Cricket arena at night under floodlights"
         loading="eager" fetchpriority="high"
       />
@@ -531,7 +537,7 @@
   <div class="section-inner">
     <div class="about-grid">
       <div class="about-img-wrap reveal">
-        <img src="https://images.unsplash.com/photo-1631377819268-d716cd610cd2?w=900&q=85&auto=format&fit=crop&crop=center" alt="Cricket match action" loading="lazy"/>
+        <img referrerpolicy="no-referrer-when-downgrade" crossorigin="anonymous" src="https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=900&q=85&fm=jpg&auto=format&fit=crop" alt="Cricket match action" loading="lazy"/>
         <div class="about-gold-tag">&#127959; Premium Indoor Cricket</div>
         <div class="about-open-tag">Open 24 / 7</div>
       </div>
@@ -583,23 +589,23 @@
     </div>
     <div class="gallery-grid reveal">
       <div class="gallery-item gallery-tall">
-        <img src="https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=800&q=85&auto=format&fit=crop&crop=center" alt="Indoor sports arena" loading="lazy"/>
+        <img referrerpolicy="no-referrer-when-downgrade" crossorigin="anonymous" src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=1200&q=80&fm=jpg&auto=format&fit=crop" alt="Indoor sports arena" loading="lazy"/>
         <div class="gallery-overlay"><span>The Court</span></div>
       </div>
       <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1540747913346-19212a4a65b6?w=700&q=85&auto=format&fit=crop&crop=top" alt="Cricket match action" loading="lazy"/>
+        <img referrerpolicy="no-referrer-when-downgrade" crossorigin="anonymous" src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?w=700&q=80&fm=jpg&auto=format&fit=crop" alt="Cricket match action" loading="lazy"/>
         <div class="gallery-overlay"><span>Match Night</span></div>
       </div>
       <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1554068865-24cecd4e34b8?w=700&q=85&auto=format&fit=crop&crop=center" alt="Sports arena lighting" loading="lazy"/>
+        <img referrerpolicy="no-referrer-when-downgrade" crossorigin="anonymous" src="https://images.unsplash.com/photo-1554068865-24cecd4e34b8?w=700&q=80&fm=jpg&auto=format&fit=crop" alt="Sports arena lighting" loading="lazy"/>
         <div class="gallery-overlay"><span>Floodlights</span></div>
       </div>
       <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1599474924187-334a4ae5bd3c?w=700&q=85&auto=format&fit=crop&crop=center" alt="Cricket players" loading="lazy"/>
+        <img referrerpolicy="no-referrer-when-downgrade" crossorigin="anonymous" src="https://images.unsplash.com/photo-1599474924187-334a4ae5bd3c?w=700&q=80&fm=jpg&auto=format&fit=crop" alt="Cricket players" loading="lazy"/>
         <div class="gallery-overlay"><span>Game On</span></div>
       </div>
       <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?w=700&q=85&auto=format&fit=crop&crop=center" alt="Team game" loading="lazy"/>
+        <img referrerpolicy="no-referrer-when-downgrade" crossorigin="anonymous" src="https://images.unsplash.com/photo-1545809074-59472b3f5ecc?w=700&q=80&fm=jpg&auto=format&fit=crop" alt="Team game" loading="lazy"/>
         <div class="gallery-overlay"><span>Team Play</span></div>
       </div>
     </div>
